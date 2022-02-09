@@ -1,0 +1,42 @@
+/* productos */
+
+
+main{
+    .seccionTartas{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .seccionBudines{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tartas{
+        padding: 2%;
+        text-align: center;
+    }
+    
+    .budines{
+        padding: 2%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .productosTitulo{
+        padding: 10px;
+        margin: 10px;
+        font-size: 30px;
+    }
+
+    .seccionTartas{
+        flex-direction: column;
+    }
+
+    .nosotrosContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

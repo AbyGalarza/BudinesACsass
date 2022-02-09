@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff7ff; }
+
+.contenedor {
+  display: grid; }
+
+/* header */
+header .logo {
+  max-height: 140px; }
+
+header .color-menu {
+  background-color: #fff7ff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
+  header .color-menu .nav-item:hover {
+    background-color: #fdefdc;
+    border-radius: 10px; }
+    header .color-menu .nav-item:hover .nav-link {
+      color: black; }
+
+/* main */
+main .banner {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px; }
+
+main .carousel-item > img {
+  margin: auto; }
+
+main button > span {
+  background-color: #ffb5cc; }
+
+main div h3 {
+  padding: 20px;
+  text-align: center;
+  font-size: 25px; }
+
+main section img {
+  height: 300px;
+  border-radius: 10px; }
+
+main .combos {
+  display: flex;
+  justify-content: space-evenly; }
+
+main .novedades {
+  display: flex;
+  justify-content: space-evenly; }
+
+@media screen and (max-width: 480px) {
+  main img {
+    width: 100%; }
+  .banner {
+    display: none; }
+  main section {
+    display: flex;
+    flex-direction: column; }
+  main section img {
+    padding: 5px; } }
+
+/* footer */
+footer {
+  background-color: #ffb5cc;
+  text-align: center;
+  border-top: 1px solid black;
+  padding: 30px;
+  margin-top: 20px; }
+
+/* productos */
+main .seccionTartas {
+  display: flex;
+  justify-content: space-around; }
+
+main .seccionBudines {
+  display: flex;
+  justify-content: center; }
+
+main .tartas {
+  padding: 2%;
+  text-align: center; }
+
+main .budines {
+  padding: 2%;
+  text-align: center; }
+
+@media screen and (max-width: 480px) {
+  .productosTitulo {
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px; }
+  .seccionTartas {
+    flex-direction: column; }
+  .nosotrosContainer {
+    display: flex;
+    flex-wrap: wrap; } }
+
+/* nosotros */
+main .nosotrosP {
+  margin: 2%; }
+
+main .nosotrosContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 3%; }
+
+/* preguntas frecuentes */
+.mainPreguntas span {
+  font-size: 18px;
+  color: #ffb5cc; }
+
+.mainPreguntas p {
+  padding-bottom: 3%; }
