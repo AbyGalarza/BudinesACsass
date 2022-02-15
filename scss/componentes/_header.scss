@@ -20,11 +20,11 @@ header{
     }
     .color-menu{
         background-color: $color-rosac;
-        border-radius: $borde;
+        @extend %borde;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
             .nav-item:hover{
-                background-color: $color-cream;
-                border-radius: $borde;
+                background-color: map-get($map: $hovermenu , $key: color-hmenu);
+                border-radius: map-get($map: $hovermenu, $key: borde-hmenu);
                 .nav-link{
                     color: black;
                 }
