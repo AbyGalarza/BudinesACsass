@@ -8,14 +8,14 @@ footer{
     margin-top: 20px;
 
     h2{
-        font-size: 15px;
+        @extend %footerFont;
     }
 
     h3{
-        font-size: 15px;
+        @extend %footerFont;
     }
     h4{
-        font-size: 15px;
+       @extend %footerFont; 
     }
 
 }
