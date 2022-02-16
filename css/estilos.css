@@ -17,7 +17,7 @@ body {
 
 /* header */
 header .logo {
-  max-height: 140px; }
+  width: 120px; }
 
 header .color-menu {
   background-color: #fff7ff;
@@ -27,56 +27,53 @@ header .color-menu {
     border-radius: 10px; }
     header .color-menu .nav-item:hover .nav-link {
       color: black; }
+  header .color-menu form > button {
+    color: #ffb5cc; }
+  header .color-menu form > button:hover {
+    background-color: #ffb5cc; }
 
 /* main */
-main nav > ol > li > a {
-  color: black;
-  text-decoration: none; }
-
-main .bannerContainer {
-  position: relative;
-  text-align: center; }
-  main .bannerContainer .envios {
-    background-color: #ffb5cc;
-    opacity: 0.7;
-    border-radius: 10px;
-    font-size: 40px;
-    padding: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-
-main .banner {
-  width: 100%;
-  height: 80%; }
-
-main .carousel-item > img {
-  margin: auto; }
-
-main button > span {
-  background-color: #ffb5cc; }
-
-main div h1 {
-  padding: 20px;
-  text-align: center;
-  font-size: 25px; }
-
-main div h2 {
-  padding: 20px;
-  text-align: center;
-  font-size: 25px; }
-
-main section img {
-  height: 300px; }
-
-main .combos {
-  display: flex;
-  justify-content: space-evenly; }
-
-main .novedades {
-  display: flex;
-  justify-content: space-evenly; }
+main {
+  padding-top: 8.5%; }
+  main nav > ol > li > a {
+    color: black;
+    text-decoration: none; }
+  main .bannerContainer {
+    position: relative;
+    text-align: center; }
+    main .bannerContainer .envios {
+      background-color: #ffb5cc;
+      opacity: 0.7;
+      border-radius: 10px;
+      font-size: 40px;
+      padding: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  main .banner {
+    width: 100%;
+    height: 80%; }
+  main .carousel-item > img {
+    margin: auto; }
+  main button > span {
+    background-color: #ffb5cc; }
+  main div h1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px; }
+  main div h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px; }
+  main section img {
+    height: 300px; }
+  main .combos {
+    display: flex;
+    justify-content: space-evenly; }
+  main .novedades {
+    display: flex;
+    justify-content: space-evenly; }
 
 @media screen and (max-width: 480px) {
   main img {

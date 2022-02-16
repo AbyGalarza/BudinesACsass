@@ -25,14 +25,6 @@
     <div class="contenedor">
         <!-- titulo -->
         <header class="row">
-            <!-- logo -->
-            <div class="col-12">
-                <a href="../index.html">
-                    <img class="mx-auto d-block img-fluid logo" src="../img/logo.png" alt="logo">
-                </a>
-            </div>
-
-
 
             <!-- whatsapp -->
             <div>
@@ -40,13 +32,13 @@
                     alt="whatsappLogo">
             </div>
 
-
-
             <!-- navbar -->
 
-            <nav class="navbar navbar-expand-lg navbar-light color-menu m-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light color-menu p-0">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand p-0" href="../index.html"> 
+                        <img class="logo" src="../img/logo.png" alt="logo"> 
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -71,18 +63,19 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="../pages/nosotros.html">Nosotros</a>
+                                <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="../pages/preguntasfrecuentes.html">FAQ</a>
+                                <a class="nav-link active" aria-current="page" href="../pages/preguntasfrecuentes.html">FAQ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="../pages/contacto.html">Contacto</a>
+                                <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
                     </div>
                 </div>
             </nav>

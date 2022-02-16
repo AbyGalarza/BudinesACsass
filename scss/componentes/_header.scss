@@ -16,7 +16,7 @@ body{
 
 header{
     .logo{
-        max-height: 140px;
+        width: 120px;
     }
     .color-menu{
         background-color: $color-rosac;
@@ -28,6 +28,12 @@ header{
                 .nav-link{
                     color: black;
                 }
+            }
+            form > button{
+                color: $color-rosa;
+            }
+            form > button:hover{
+                background-color: $color-rosa;
             }
     }
 }
