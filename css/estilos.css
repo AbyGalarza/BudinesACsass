@@ -1,3 +1,7 @@
+/* maps */
+header .color-menu, main .banner, main section img {
+  border-radius: 10px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -14,7 +18,6 @@ header .logo {
 
 header .color-menu {
   background-color: #fff7ff;
-  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
   header .color-menu .nav-item:hover {
     background-color: #fdefdc;
@@ -23,10 +26,27 @@ header .color-menu {
       color: black; }
 
 /* main */
+main nav > ol > li > a {
+  color: black;
+  text-decoration: none; }
+
+main .bannerContainer {
+  position: relative;
+  text-align: center; }
+  main .bannerContainer .envios {
+    background-color: #ffb5cc;
+    opacity: 0.7;
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 main .banner {
   width: 100%;
-  height: 80%;
-  border-radius: 10px; }
+  height: 80%; }
 
 main .carousel-item > img {
   margin: auto; }
@@ -34,14 +54,18 @@ main .carousel-item > img {
 main button > span {
   background-color: #ffb5cc; }
 
-main div h3 {
+main div h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 25px; }
+
+main div h2 {
   padding: 20px;
   text-align: center;
   font-size: 25px; }
 
 main section img {
-  height: 300px;
-  border-radius: 10px; }
+  height: 300px; }
 
 main .combos {
   display: flex;
@@ -69,6 +93,12 @@ footer {
   border-top: 1px solid black;
   padding: 30px;
   margin-top: 20px; }
+  footer h2 {
+    font-size: 15px; }
+  footer h3 {
+    font-size: 15px; }
+  footer h4 {
+    font-size: 15px; }
 
 /* productos */
 main .seccionTartas {
@@ -99,6 +129,9 @@ main .budines {
     flex-wrap: wrap; } }
 
 /* nosotros */
+main h1 {
+  text-align: center; }
+
 main .nosotrosP {
   margin: 2%; }
 
@@ -114,5 +147,3 @@ main .nosotrosContainer {
 
 .mainPreguntas p {
   padding-bottom: 3%; }
-
-/* maps */

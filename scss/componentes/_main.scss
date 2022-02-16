@@ -2,16 +2,33 @@
 
 main{ 
 
-    nav > ol > li {
-        background-color: green;
+    nav > ol > li > a{
+        color: black;
+        text-decoration: none
+    }
+
+    .bannerContainer{
+        position: relative;
+        text-align: center;
+        .envios{
+            background-color: $color-rosa; 
+            opacity: 0.7;
+            
+            border-radius: $borde;
+            font-size: 40px;
+            padding: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     .banner{
-        width: 100%;
-        height: 80%;
+        @include size(100%,80%);
         @extend %borde;
-
     }
+
     // carousel //
 
     .carousel-item > img{ 
@@ -22,7 +39,13 @@ main{
         background-color: $color-rosa;
     }
 
-    div h3{
+    div h1{
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    div h2{
         padding: 20px;
         text-align: center;
         font-size: 25px;
