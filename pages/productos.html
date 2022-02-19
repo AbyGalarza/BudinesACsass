@@ -36,8 +36,8 @@
 
             <nav class="navbar navbar-expand-lg fixed-top navbar-light color-menu p-0">
                 <div class="container-fluid p-0">
-                    <a class="navbar-brand p-0" href="../index.html"> 
-                        <img class="logo" src="../img/logo.png" alt="logo"> 
+                    <a class="navbar-brand p-0" href="../index.html">
+                        <img class="logo" src="../img/logo.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -63,19 +63,28 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                                <a class="nav-link active" aria-current="page"
+                                    href="../pages/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../pages/preguntasfrecuentes.html">FAQ</a>
+                                <a class="nav-link active" aria-current="page"
+                                    href="../pages/preguntasfrecuentes.html">FAQ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                                <a class="nav-link active" aria-current="page"
+                                    href="../pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
+                        <a class="link" href="">
+                            <img class="cuenta" src="../img/cuenta.png" alt="usuario">
+                        </a>
+                        <a class="link" href="">
+                            <img class="carrito" src="../img/carrito.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -91,27 +100,82 @@
                 </ol>
             </nav>
 
-            <h1 class="productosTitulo"> Productos </h1>
-            <section>
-                <h2 class="tartas"> Tartas </h2>
-                <div class="seccionTartas">
-                    <img src="../img/pastaFrolaProductos.jpeg" alt="pastaFrola">
-                    <img src="../img/Ricota.jpeg" alt="tartaRicota">
-                    <img src="../img/Conitos.jpeg" alt="tartaConitos">
+            <h1 class="tartas"> Tartas </h1>
+            <section class="seccionTartas">
+                <div class="card">
+                    <img src="../img/tartaChoco.jpeg" alt="tartaChocolate">
+                    <h2>Chocolate</h2>
+                    <p class="price">$400</p>
+                    <p><button>Comprar</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="../img/tartaCoco.jpeg" alt="tartaCocoYdulce">
+                    <h2>Coco y dulce de leche</h2>
+                    <p class="price">$400</p>
+                    <p><button>Comprar</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="../img/tartaLemon.jpeg" alt="tartaCocoYdulce">
+                    <h3>Lemon Pie</h3>
+                    <p class="price">$400</p>
+                    <p><button>Comprar</button></p>
                 </div>
             </section>
 
-            <section>
-                <h2 class="budines"> Budines </h2>
-                <div class="seccionBudines">
-                    <img src="../img/budinesProductos.jpeg" alt="budines">
+            <h3 class="budines"> Budines </h3>
+            <section class="seccionBudines">
+                <div class="card">
+                    <img src="../img/budinFrutos.jpeg" alt="budinFrutosRojos">
+                    <h3>Frutos rojos</h3>
+                    <p class="price">$450</p>
+                    <p><button>Comprar</button></p>
+                </div>
+
+                <div class="card ajustar">
+                    <img class="budinM" src="../img/budinLimon.jpg" alt="budinManzana">
+                    <h3>Limón</h3>
+                    <p class="price">$450</p>
+                    <p><button>Comprar</button></p>
+                </div>
+
+                <div class="card ajustar">
+                    <img class="budinM" src="../img/budinChips.jpg" alt="budinChipsDeChocolate">
+                    <h4>Chips de chocolate</h4>
+                    <p class="price">$450</p>
+                    <p><button>Comprar</button></p>
                 </div>
             </section>
         </main>
 
         <footer>
             <!-- pie de pagina -->
-            <h3> Copyright A.C Budines - 2022. Todos los derechos reservados </h3>
+            <div class="footerSecciones">
+                <div class="navegacion col-xs-12 col-sm-2 col-md-2 col-lg-4 m-bottom">
+                    <a class="navFooter" href="../index.html">Inicio</a>
+                    <a class="navFooter" href="../pages/productos.html">Productos</a>
+                    <a class="navFooter" href="../pages/nosotros.html">Nosotros</a>
+                    <a class="navFooter" href="../pages/preguntasfrecuentes.html">Preguntas frecuentes</a>
+                    <a class="navFooter" href="../pages/contacto.html">Contacto</a>
+                </div> 
+                <div class="redes col-xs-12 col-sm-2 col-md-2 col-lg-4 m-bottom">
+                    <a href="">
+                        <img class="imgRedes" src="../img/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="">
+                        <img class="imgRedes" src="../img/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="">
+                        <img class="imgRedes" src="../img/whats.svg" alt="whatsapp">
+                    </a>
+                </div>
+                <div class="contacto col-xs-12 col-sm-2 col-md-2 col-lg-4 m-bottom"> 
+                    <p>contacto@budinesac.com</p>
+                    <p>+54 9 1169990909</p>
+                </div>../
+            </div>
+            <h4> Copyright A.C Budines - 2022. Todos los derechos reservados </h4>
         </footer>
     </div>
 

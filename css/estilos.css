@@ -1,16 +1,21 @@
 /* maps */
-header .color-menu, main .banner, main section img {
+header .color-menu, main .banner, main section img, main .card img, main .card button, .card img, .card button, .card:hover {
   border-radius: 10px; }
 
 footer h2, footer h3, footer h4 {
-  font-size: 15px; }
+  font-size: 13px; }
+
+main .card h2, main .card h3, main .card h4, .card h2, .card h3, .card h4 {
+  padding: 0px;
+  font-size: 19px;
+  margin: 0.5rem; }
 
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  background-color: #fff7ff; }
+  background-color: #fff5ff; }
 
 .contenedor {
   display: grid; }
@@ -20,7 +25,7 @@ header .logo {
   width: 120px; }
 
 header .color-menu {
-  background-color: #fff7ff;
+  background-color: #fff5ff;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
   header .color-menu .nav-item:hover {
     background-color: #fdefdc;
@@ -28,9 +33,19 @@ header .color-menu {
     header .color-menu .nav-item:hover .nav-link {
       color: black; }
   header .color-menu form > button {
-    color: #ffb5cc; }
+    color: #ffb5cc;
+    border: 1px solid #ffb5cc; }
   header .color-menu form > button:hover {
-    background-color: #ffb5cc; }
+    background-color: #ffb5cc;
+    border: 1px solid; }
+  header .color-menu .link {
+    margin: 1%; }
+    header .color-menu .link .cuenta {
+      background-color: #fff5ff;
+      width: 40px; }
+    header .color-menu .link .carrito {
+      background-color: #fff5ff;
+      width: 40px; }
 
 /* main */
 main {
@@ -62,65 +77,168 @@ main {
     padding: 20px;
     text-align: center;
     font-size: 25px; }
-  main div h2 {
-    padding: 20px;
+  main .combos {
+    padding: 1%;
     text-align: center;
-    font-size: 25px; }
+    font-size: 27px; }
+  main .seccionCombos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
   main section img {
     height: 300px; }
-  main .combos {
-    display: flex;
-    justify-content: space-evenly; }
   main .novedades {
+    padding: 1%;
+    text-align: center;
+    font-size: 27px; }
+  main .seccionNovedades {
     display: flex;
-    justify-content: space-evenly; }
+    flex-direction: row;
+    justify-content: space-around; }
 
 @media screen and (max-width: 480px) {
-  main img {
-    width: 100%; }
-  .banner {
-    display: none; }
-  main section {
-    display: flex;
-    flex-direction: column; }
-  main section img {
-    padding: 5px; } }
+  main {
+    margin-top: 17%; }
+    main img {
+      width: 100%; }
+    main .banner {
+      display: none; }
+    main .seccionCombos {
+      flex-direction: column;
+      flex-wrap: wrap; }
+    main .seccionNovedades {
+      flex-direction: column;
+      flex-wrap: wrap; } }
 
 /* footer */
 footer {
   background-color: #ffb5cc;
   text-align: center;
   border-top: 1px solid black;
-  padding: 30px;
-  margin-top: 20px; }
+  padding: 10px;
+  margin-top: 20px;
+  justify-content: space-between; }
+  footer .footerSecciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    footer .footerSecciones .navegacion {
+      display: flex;
+      flex-direction: column;
+      font-size: 17px; }
+      footer .footerSecciones .navegacion a {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s; }
+    footer .footerSecciones .redes {
+      display: flex;
+      flex-direction: row; }
+      footer .footerSecciones .redes a {
+        flex-wrap: wrap; }
+      footer .footerSecciones .redes .imgRedes {
+        width: 30%;
+        transition: 0.3s; }
+    footer .footerSecciones .contacto {
+      font-size: 17px; }
+
+.imgRedes:hover {
+  transform: scale(1.1); }
+
+.navFooter:hover {
+  transform: scale(1.1); }
 
 /* productos */
 main .seccionTartas {
   display: flex;
+  flex-direction: row;
   justify-content: space-around; }
 
 main .seccionBudines {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: space-around; }
 
 main .tartas {
-  padding: 2%;
-  text-align: center; }
+  padding: 1%;
+  text-align: center;
+  font-size: 27px; }
 
 main .budines {
-  padding: 2%;
-  text-align: center; }
+  padding: 1%;
+  text-align: center;
+  font-size: 27px; }
+
+main .card {
+  background-color: #fff5ff;
+  max-width: 300px;
+  margin: 1;
+  text-align: center;
+  font-family: arial;
+  border: 0px;
+  transition: 0.3s; }
+  main .card img {
+    width: 100; }
+  main .card .price {
+    margin-bottom: 0.5rem; }
+  main .card button {
+    opacity: 0;
+    outline: 0;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    color: #fff5ff;
+    background-color: #ffb5cc;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px; }
+
+main .card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  main .card:hover button {
+    opacity: 1; }
 
 @media screen and (max-width: 480px) {
-  .productosTitulo {
+  .tartas {
     padding: 10px;
-    margin: 10px;
     font-size: 30px; }
   .seccionTartas {
-    flex-direction: column; }
-  .nosotrosContainer {
-    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .seccionBudines {
+    flex-direction: column;
     flex-wrap: wrap; } }
+
+.card {
+  background-color: #fff5ff;
+  max-width: 300px;
+  margin: 1;
+  text-align: center;
+  font-family: arial;
+  border: 0px; }
+  .card img {
+    width: 100; }
+  .card .price {
+    margin: 0px; }
+  .card button {
+    opacity: 0;
+    outline: 0;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    color: #fff5ff;
+    background-color: #ffb5cc;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px; }
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; }
+  .card:hover button {
+    opacity: 1;
+    transition: 0.3s; }
 
 /* nosotros */
 main h1 {
@@ -141,3 +259,23 @@ main .nosotrosContainer {
 
 .mainPreguntas p {
   padding-bottom: 3%; }
+
+.mainPreguntas .accordion-button {
+  color: black;
+  background-color: #fff5ff;
+  border: 1px solid rgba(0, 0, 0, 0.24); }
+
+form {
+  margin-left: 1%; }
+  form .colorForm {
+    background-color: #fff5ff;
+    border: 0;
+    border-bottom: 3px solid #ffb5cc;
+    margin: 1%; }
+  form .btn {
+    background-color: #fff5ff;
+    color: #ffb5cc;
+    border: 1px solid #ffb5cc; }
+  form .btn:hover {
+    background-color: #ffb5cc;
+    border: 1px solid; }

@@ -35,12 +35,12 @@
             </div>
 
             <!-- navbar -->
-            
+
 
             <nav class="navbar navbar-expand-lg fixed-top navbar-light color-menu p-0">
                 <div class="container-fluid p-0">
-                    <a class="navbar-brand p-0" href="index.html"> 
-                        <img class="logo" src="img/logo.png" alt="logo"> 
+                    <a class="navbar-brand p-0" href="index.html">
+                        <img class="logo" src="img/logo.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -80,6 +80,12 @@
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
+                        <a class="link" href="">
+                            <img class="cuenta" src="img/cuenta.png" alt="usuario">
+                        </a>
+                        <a class="link" href="">
+                            <img class="carrito" src="img/carrito.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -87,7 +93,7 @@
 
         <main>
             <!-- contenido principal -->
-            
+
             <div class="bannerContainer">
                 <img class="banner" src="img/envios.png" alt="imagenenviosadomicilio">
                 <div class="envios"> Envíos a domicilio </div>
@@ -99,56 +105,108 @@
             </div>
             <!-- carousel -->
             <div class="container">
-            <section class="row">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/budinesProductos.jpeg" class="d-block w-40" alt="budines">
+                <section class="row">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/budinesProductos.jpeg" class="d-block w-40" alt="budines">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/pastaFrolaProductos.jpeg" class="d-block w-40" alt="roscaChocolate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/panDulce.jpeg" class="d-block w-40" alt="panDulce">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="img/roscaChocolate.jpeg" class="d-block w-40" alt="roscaChocolate">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/panDulce.jpeg" class="d-block w-40" alt="panDulce">
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
-        </div>
+                </section>
+            </div>
 
             <!-- Combos -->
-            <div>
-                <h2> Combos </h2>
-            </div>
-            <section class="seccion combos">
-                <img src="img/combo1.jpeg" alt="combo1">
-                <img src="img/combo2.jpeg" alt="combo2">
-                <img src="img/combo3.jpeg" alt="combo3">
+            <h2 class="combos"> Combos </h2>
+            <section class="seccionCombos">
+                <div class="card">
+                    <img src="img/combo1.jpeg" alt="Combo1">
+                    <h2>Combo desayuno</h2>
+                    <p class="price">$2000</p>
+                    <p><button>Comprar</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="img/combo2.jpeg" alt="Combo2">
+                    <h3>Combo dulce</h3>
+                    <p class="price">$1500</p>
+                    <p><button>Comprar</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="img/combo3.jpeg" alt="Combo3">
+                    <h3>Combo brunch</h3>
+                    <p class="price">$2000</p>
+                    <p><button>Comprar</button></p>
+                </div>
             </section>
 
             <!-- Novedades -->
-            <div>
-                <h2> Novedades </h2>
-            </div>
-            <section class="seccion novedades">
-                <img src="img/Novedades1.jpeg" alt="macaron">
-                <img src="img/Novedades2.jpeg" alt="lemonPie">
-                <img src="img/Novedades3.jpeg" alt="brownie">
+            <h3 class="novedades"> Novedades </h3>
+            <section class="seccionNovedades">
+                <div class="card">
+                    <img src="img/Novedades1.jpeg" alt="macarons">
+                    <h4>Macarons x6</h4>
+                    <p class="price">$1800</p>
+                    <p><button>Comprar</button></p>
+                </div>
+                <div class="card">
+                    <img src="img/Novedades2.jpeg" alt="lemonPie">
+                    <h4>Lemon Pie</h4>
+                    <p class="price">$500</p>
+                    <p><button>Comprar</button></p>
+                </div>
+                <div class="card">
+                    <img src="img/Novedades3.jpeg" alt="brownie">
+                    <h4>Brownie</h4>
+                    <p class="price">$500</p>
+                    <p><button>Comprar</button></p>
+                </div>
             </section>
         </main>
 
         <!-- pie de pagina -->
         <footer>
+            <div class="footerSecciones">
+                <div class="navegacion col-xs-12 col-sm-2 col-md-2 col-lg-4 m-bottom">
+                    <a class="navFooter" href="index.html">Inicio</a>
+                    <a class="navFooter" href="pages/productos.html">Productos</a>
+                    <a class="navFooter" href="pages/nosotros.html">Nosotros</a>
+                    <a class="navFooter" href="pages/preguntasfrecuentes.html">Preguntas frecuentes</a>
+                    <a class="navFooter" href="pages/contacto.html">Contacto</a>
+                </div>
+                <div class="redes col-xs-12 col-sm-2 col-md-2 col-lg-4 m-bottom">
+                    <a href="">
+                        <img class="imgRedes" src="img/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="">
+                        <img class="imgRedes" src="img/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="">
+                        <img class="imgRedes" src="img/whats.svg" alt="whatsapp">
+                    </a>
+                </div>
+                <div class="contacto col-xs-12 col-sm-2 col-md-2 col-lg-4 m-bottom"> 
+                    <p>contacto@budinesac.com</p>
+                    <p>+54 9 1169990909</p>
+                </div>
+            </div>
             <section>
                 <h4> Copyright A.C Budines - 2022. Todos los derechos reservados </h4>
             </section>

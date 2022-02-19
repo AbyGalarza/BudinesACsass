@@ -1,0 +1,20 @@
+form{
+    margin-left: 1%;
+    .colorForm{
+        background-color: $color-rosac;
+        border: 0;
+        border-bottom: 3px solid $color-rosa;
+        margin: 1%;
+    }
+    .btn{
+        background-color: $color-rosac;
+        color: $color-rosa;
+        border: 1px solid $color-rosa;
+    }
+    .btn:hover{
+        background-color: $color-rosa;
+        border: 1px solid ;
+    }
+}
+
+

@@ -47,44 +47,59 @@ main{
         font-size: 25px;
     }
 
-    div h2{
-        padding: 20px;
+    .combos{
+        padding: 1%;
         text-align: center;
-        font-size: 25px;
+        font-size: 27px;
+    }
+
+    .seccionCombos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     section img{
         height: 300px;
         @extend %borde;
     }
-    
-    .combos{
-        display: flex;
-        justify-content: space-evenly;
-    }
 
     .novedades{
+        padding: 1%;
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .seccionNovedades{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
 @media screen and (max-width: 480px){
 
-    main img{
-        width: 100%;
+    main{
+        margin-top: 17%;
+        img{
+            width: 100%;
+        }
+    
+        .banner{
+            display: none;
+        }
+    
+        .seccionCombos{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    
+        .seccionNovedades{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
     }
 
-    .banner{
-        display: none;
-    }
 
-    main section{
-        display: flex;
-        flex-direction: column;
-    }
-    main section img{
-        padding: 5px;
-    }
 }
 

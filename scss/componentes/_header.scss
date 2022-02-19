@@ -31,9 +31,22 @@ header{
             }
             form > button{
                 color: $color-rosa;
+                border: 1px solid $color-rosa;
             }
             form > button:hover{
                 background-color: $color-rosa;
+                border: 1px solid ;
+            }
+            .link{
+            margin: 1%;
+                .cuenta{
+                background-color: $color-rosac;
+                width: 40px;
+                }
+                .carrito{
+                    background-color: $color-rosac;
+                    width: 40px;
+                }
             }
     }
 }
