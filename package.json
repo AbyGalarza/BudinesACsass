@@ -1,7 +1,7 @@
 {
   "name": "budinesacsass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tienda online de productos de pastelería",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
