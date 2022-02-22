@@ -98,17 +98,21 @@ main {
 
 @media screen and (max-width: 480px) {
   main {
-    margin-top: 17%; }
+    margin-top: 25%; }
     main img {
       width: 100%; }
     main .banner {
       display: none; }
+    main .envios {
+      display: none; }
     main .seccionCombos {
-      flex-direction: column;
-      flex-wrap: wrap; }
+      flex-direction: column; }
+      main .seccionCombos div {
+        margin-left: 15%; }
     main .seccionNovedades {
-      flex-direction: column;
-      flex-wrap: wrap; } }
+      flex-direction: column; }
+      main .seccionNovedades div {
+        margin-left: 15%; } }
 
 /* footer */
 footer {
@@ -146,6 +150,15 @@ footer {
 
 .navFooter:hover {
   transform: scale(1.1); }
+
+@media screen and (max-width: 480px) {
+  footer {
+    display: grid; }
+    footer .footerSecciones {
+      display: flex;
+      flex-direction: column; }
+    footer div {
+      margin: 3%; } }
 
 /* productos */
 main .seccionTartas {
@@ -251,6 +264,10 @@ main .nosotrosContainer {
   display: flex;
   align-items: center;
   margin-top: 3%; }
+
+@media screen and (max-width: 480px) {
+  main .nosotrosContainer {
+    display: grid; } }
 
 /* preguntas frecuentes */
 .mainPreguntas span {

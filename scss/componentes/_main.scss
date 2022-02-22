@@ -80,7 +80,7 @@ main{
 @media screen and (max-width: 480px){
 
     main{
-        margin-top: 17%;
+        margin-top: 25%;
         img{
             width: 100%;
         }
@@ -88,15 +88,23 @@ main{
         .banner{
             display: none;
         }
+
+        .envios{
+            display: none;
+        }
     
         .seccionCombos{
             flex-direction: column;
-            flex-wrap: wrap;
+            div{
+                margin-left: 15%;
+            } 
         }
     
         .seccionNovedades{
             flex-direction: column;
-            flex-wrap: wrap;
+            div{
+                margin-left: 15%;
+            } 
         }
     }
 

@@ -56,4 +56,16 @@ footer{
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 480px){
+    footer{
+        display: grid;
+        .footerSecciones{
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            margin: 3%;
+        }
+    }
+}
 
