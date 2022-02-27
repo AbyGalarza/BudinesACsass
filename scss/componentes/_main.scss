@@ -57,6 +57,9 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        img{
+            object-fit: cover;
+        }
     }
 
     section img{
@@ -107,7 +110,14 @@ main{
             } 
         }
     }
+}
 
-
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    main{
+        .card{
+            margin: 2%;
+            justify-content: space-evenly;
+        }
+    }
 }
 

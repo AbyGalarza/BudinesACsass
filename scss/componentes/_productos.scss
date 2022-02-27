@@ -75,6 +75,10 @@ main{
 
 @media screen and (max-width: 480px){
 
+    .card{
+        opacity: 1;
+    }
+
     .tartas{
         padding: 10px;
         font-size: 30px;
@@ -104,6 +108,7 @@ main{
     img{
         @extend %borde;
         width: 100;
+
     }
     background-color: $color-rosac;
     max-width: 300px;
@@ -130,12 +135,16 @@ main{
       }
   }
   
-.card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    @extend %borde;
-    button{
-        opacity: 1;
+
+
+@media screen and (min-width: 481px){
+    .card:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
+        border-radius: 10px;
+        button{
+            opacity: 1;
+            transition: 0.3s;
+        }
     }
 }

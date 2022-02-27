@@ -1,19 +1,37 @@
-form{
-    margin-left: 1%;
-    .colorForm{
-        background-color: $color-rosac;
-        border: 0;
-        border-bottom: 3px solid $color-rosa;
-        margin: 1%;
-    }
-    .btn{
-        background-color: $color-rosac;
-        color: $color-rosa;
-        border: 1px solid $color-rosa;
-    }
-    .btn:hover{
-        background-color: $color-rosa;
-        border: 1px solid ;
+.contacto{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    form{
+        margin-left: 2%;
+        .colorForm{
+            background-color: $color-rosac;
+            border: 0;
+            border-bottom: 3px solid $color-rosa;
+            margin: 1%;
+        }
+        .btn{
+            background-color: $color-rosac;
+            color: $color-rosa;
+            border: 1px solid $color-rosa;
+        }
+        .btn:hover{
+            color: $color-rosac;
+            background-color: $color-rosa;
+            border: 1px solid ;
+        }
+    }  
+    .contactoSection{
+        font-weight: bold;
+        .imgR{
+            display: flex;
+            a{
+                margin-right: 5%;
+            }
+            img{
+            height: 90%;
+            width: 100%;
+            }               
+        }
     }
 }
 
