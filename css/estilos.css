@@ -342,4 +342,5 @@ main .nosotrosContainer {
     .contacto div {
       margin: 2%; }
     .contacto .imgR {
-      width: 50%; } }
+      width: 50%;
+      background-color: burlywood; } }
