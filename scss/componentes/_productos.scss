@@ -88,11 +88,17 @@ main{
     .seccionTartas{
         flex-direction: column;
         flex-wrap: wrap;
+        img{
+            object-fit: cover;
+        }
     }
 
     .seccionBudines{
         flex-direction: column;
         flex-wrap: wrap;
+        img{
+            object-fit: cover;
+        }
     }
 }
 

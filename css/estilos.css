@@ -234,9 +234,13 @@ main .card:hover {
   .seccionTartas {
     flex-direction: column;
     flex-wrap: wrap; }
+    .seccionTartas img {
+      object-fit: cover; }
   .seccionBudines {
     flex-direction: column;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+    .seccionBudines img {
+      object-fit: cover; } }
 
 .card {
   background-color: #fff5ff;
@@ -286,8 +290,7 @@ main .nosotrosP {
 main .nosotrosContainer {
   display: flex;
   align-items: center;
-  margin-top: 3%;
-  margin-left: 2%; }
+  margin: 3% 2% 0 2%; }
 
 @media screen and (max-width: 600px) {
   main .nosotrosContainer {
@@ -336,11 +339,10 @@ main .nosotrosContainer {
 
 @media screen and (max-width: 480px) {
   .contacto {
-    margin-left: 3%;
+    margin-left: 2%;
     display: grid;
     grid-template-columns: auto; }
     .contacto div {
       margin: 2%; }
     .contacto .imgR {
-      width: 50%;
-      background-color: burlywood; } }
+      width: 50%; } }
