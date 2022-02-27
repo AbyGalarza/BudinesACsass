@@ -339,7 +339,7 @@ main .nosotrosContainer {
 
 @media screen and (max-width: 480px) {
   .contacto {
-    margin-left: 2%;
+    margin: 1%;
     display: grid;
     grid-template-columns: auto; }
     .contacto div {
