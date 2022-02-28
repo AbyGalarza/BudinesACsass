@@ -110,11 +110,11 @@ main {
     main .seccionCombos {
       flex-direction: column; }
       main .seccionCombos div {
-        margin-left: 15%; }
+        margin-left: 1,5%; }
     main .seccionNovedades {
       flex-direction: column; }
       main .seccionNovedades div {
-        margin-left: 15%; } }
+        margin-left: 1,5%; } }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   main .card {
@@ -312,21 +312,19 @@ main .nosotrosContainer {
 .contacto {
   display: grid;
   grid-template-columns: 60% 40%; }
-  .contacto form {
-    margin-left: 2%; }
-    .contacto form .colorForm {
-      background-color: #fff5ff;
-      border: 0;
-      border-bottom: 3px solid #ffb5cc;
-      margin: 1%; }
-    .contacto form .btn {
-      background-color: #fff5ff;
-      color: #ffb5cc;
-      border: 1px solid #ffb5cc; }
-    .contacto form .btn:hover {
-      color: #fff5ff;
-      background-color: #ffb5cc;
-      border: 1px solid; }
+  .contacto form .colorForm {
+    background-color: #fff5ff;
+    border: 0;
+    border-bottom: 3px solid #ffb5cc;
+    margin: 1%; }
+  .contacto form .btn {
+    background-color: #fff5ff;
+    color: #ffb5cc;
+    border: 1px solid #ffb5cc; }
+  .contacto form .btn:hover {
+    color: #fff5ff;
+    background-color: #ffb5cc;
+    border: 1px solid; }
   .contacto .contactoSection {
     font-weight: bold; }
     .contacto .contactoSection .imgR {
@@ -339,7 +337,6 @@ main .nosotrosContainer {
 
 @media screen and (max-width: 480px) {
   .contacto {
-    margin: 1%;
     display: grid;
     grid-template-columns: auto; }
     .contacto div {
