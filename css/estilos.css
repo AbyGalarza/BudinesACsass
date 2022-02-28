@@ -110,11 +110,12 @@ main {
     main .seccionCombos {
       flex-direction: column; }
       main .seccionCombos div {
-        margin-left: 1,5%; }
+        margin-left: 15%;
+        margin-right: 15%; }
     main .seccionNovedades {
       flex-direction: column; }
       main .seccionNovedades div {
-        margin-left: 1,5%; } }
+        margin-left: 15%; } }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   main .card {
