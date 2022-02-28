@@ -313,19 +313,21 @@ main .nosotrosContainer {
 .contacto {
   display: grid;
   grid-template-columns: 60% 40%; }
-  .contacto form .colorForm {
-    background-color: #fff5ff;
-    border: 0;
-    border-bottom: 3px solid #ffb5cc;
+  .contacto form {
     margin: 1%; }
-  .contacto form .btn {
-    background-color: #fff5ff;
-    color: #ffb5cc;
-    border: 1px solid #ffb5cc; }
-  .contacto form .btn:hover {
-    color: #fff5ff;
-    background-color: #ffb5cc;
-    border: 1px solid; }
+    .contacto form .colorForm {
+      background-color: #fff5ff;
+      border: 0;
+      border-bottom: 3px solid #ffb5cc;
+      margin: 1%; }
+    .contacto form .btn {
+      background-color: #fff5ff;
+      color: #ffb5cc;
+      border: 1px solid #ffb5cc; }
+    .contacto form .btn:hover {
+      color: #fff5ff;
+      background-color: #ffb5cc;
+      border: 1px solid; }
   .contacto .contactoSection {
     font-weight: bold; }
     .contacto .contactoSection .imgR {
