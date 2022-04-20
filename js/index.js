@@ -72,6 +72,21 @@ const renderizarElemento = ()=>{
     }
 }
 
-localStorage.setItem('Carrito', )
+localStorage.setItem('Carrito', );
+
+
+let click_1 = document.getElementsByClassName('click_1');
+
+click_1.onclick = ()=>{
+    Swal.fire({
+        text: 'Se agregó al carrito',
+        icon: 'success',
+        showCloseButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'aceptar',
+    })
+}
+
+
 
 
