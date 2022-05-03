@@ -87,6 +87,8 @@ click_1.onclick = ()=>{
     })
 }
 
-
+fetch('https://www.thecocktaildb.com/')
+.then(response => response.json())
+.then(json => console.log(json))
 
 
