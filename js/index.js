@@ -72,7 +72,7 @@ const renderizarElemento = ()=>{
     }
 }
 
-localStorage.setItem('Carrito', );
+//localStorage.setItem('Carrito', );
 
 
 let click_1 = document.getElementsByClassName('click_1');

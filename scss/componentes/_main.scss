@@ -53,12 +53,17 @@ main{
         font-size: 27px;
     }
 
-    .seccionCombos{
+    .seccionBudines{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        img{
-            object-fit: cover;
+        .card{
+            img{
+                object-fit: cover;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 
