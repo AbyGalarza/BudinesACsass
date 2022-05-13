@@ -64,7 +64,7 @@ const crearSecciones = ()=>{
                         <h2>${budines[i].tipo} ${budines[i].sabor} relleno de ${budines[i].relleno}</h2>
                         <p class="price" id="price1">$${budines[i].precio}</p>
                         <p><button class="click_1" id="btn1" type="button">Comprar</button></p>`) : 
-                        (`<img src="../img/${budines[i].imagen}" alt="Combo1">
+                        (`<img src="img/${budines[i].imagen}" alt="Combo1">
                         <h2>${budines[i].tipo} ${budines[i].sabor}</h2>
                         <p class="price" id="price1">$${budines[i].precio}</p>
                         <p><button class="click_1" id="btn1" type="button">Comprar</button></p>`)
@@ -72,7 +72,23 @@ const crearSecciones = ()=>{
     }
 }
 
-
+crearSecciones = ()=>{
+    let stockProductos = JSON.parse(localStorage.getItem('productos'));
+    for (let i = 0; i < stockProductos.length; i++) {
+        let div = document.createElement('div');
+        div.className = "card";
+        div.innerHTML = stockProductos[i].relleno ? (
+                        `<img src="img/${budines[i].imagen}" alt="Combo1">
+                        <h2>${budines[i].tipo} ${budines[i].sabor} relleno de ${budines[i].relleno}</h2>
+                        <p class="price" id="price1">$${budines[i].precio}</p>
+                        <p><button class="click_1" id="btn1" type="button">Comprar</button></p>`) : 
+                        (`<img src="../img/${budines[i].imagen}" alt="Combo1">
+                        <h2>${budines[i].tipo} ${budines[i].sabor}</h2>
+                        <p class="price" id="price1">$${budines[i].precio}</p>
+                        <p><button class="click_1" id="btn1" type="button">Comprar</button></p>`)
+        seccionBudines.append(div);
+    }
+}
 
 
 
