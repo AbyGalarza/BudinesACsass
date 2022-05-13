@@ -38,7 +38,7 @@ productos = [
     },
 ]
 
-localStorage.setItem('productos',JSON.stringify(productos))
+localStorage.setItem( seccion,JSON.stringify(productos))
 console.log(productos)
 
 const selectType = (type) => {
@@ -48,14 +48,14 @@ const selectType = (type) => {
 
 const budines = selectType('Budin de');
 const combos = selectType('Combo');
-console.log(budines);
+console.log(combos);
 
 
 let seccionBudines = document.getElementById('seccionBudines');
 let seccionNovedades = document.getElementById('seccionNovedades');
 
-const crearSecciones = ()=>{
-    let stockProductos = JSON.parse(localStorage.getItem('productos'));
+const crearSecciones = (seccion)=>{
+    let stockProductos = JSON.parse(localStorage.getItem(seccion));
     for (let i = 0; i < stockProductos.length; i++) {
         let div = document.createElement('div');
         div.className = "card";
@@ -72,23 +72,8 @@ const crearSecciones = ()=>{
     }
 }
 
-crearSecciones = ()=>{
-    let stockProductos = JSON.parse(localStorage.getItem('productos'));
-    for (let i = 0; i < stockProductos.length; i++) {
-        let div = document.createElement('div');
-        div.className = "card";
-        div.innerHTML = stockProductos[i].relleno ? (
-                        `<img src="img/${budines[i].imagen}" alt="Combo1">
-                        <h2>${budines[i].tipo} ${budines[i].sabor} relleno de ${budines[i].relleno}</h2>
-                        <p class="price" id="price1">$${budines[i].precio}</p>
-                        <p><button class="click_1" id="btn1" type="button">Comprar</button></p>`) : 
-                        (`<img src="../img/${budines[i].imagen}" alt="Combo1">
-                        <h2>${budines[i].tipo} ${budines[i].sabor}</h2>
-                        <p class="price" id="price1">$${budines[i].precio}</p>
-                        <p><button class="click_1" id="btn1" type="button">Comprar</button></p>`)
-        seccionBudines.append(div);
-    }
-}
+crearSecciones('combos');
+
 
 
 
