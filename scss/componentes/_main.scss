@@ -53,7 +53,7 @@ main{
         font-size: 27px;
     }
 
-    .seccionBudines{
+    .seccionCombos{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -65,15 +65,16 @@ main{
     section img{
         height: 300px;
         @extend %borde;
+        max-width: 300px;
     }
 
-    .novedades{
+    .budines{
         padding: 1%;
         text-align: center;
         font-size: 27px;
     }
 
-    .seccionNovedades{
+    .seccionBudines{
         display: flex;
         flex-direction: row;
         justify-content: space-around;

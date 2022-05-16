@@ -81,19 +81,20 @@ main {
     padding: 1%;
     text-align: center;
     font-size: 27px; }
-  main .seccionBudines {
+  main .seccionCombos {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-    main .seccionBudines img {
+    main .seccionCombos img {
       object-fit: cover; }
   main section img {
-    height: 300px; }
-  main .novedades {
+    height: 300px;
+    max-width: 300px; }
+  main .budines {
     padding: 1%;
     text-align: center;
     font-size: 27px; }
-  main .seccionNovedades {
+  main .seccionBudines {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
